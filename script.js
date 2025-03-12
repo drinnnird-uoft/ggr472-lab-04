@@ -59,12 +59,6 @@ map.on('load', () => {
     // create a hexgrid using the bounding box coordinates
     let hexdata = turf.hexGrid(coords, 0.5, {units: "kilometers"});
 
-    // create bbox feature collection holding the bbox feature
-    bboxjson = {
-        "type" : "FeatureCollection",
-        "features" : [bboxenv]
-    }
-
     // count up collisions per hex grid
     // also store max collision count to make a color scale for the legend
 
